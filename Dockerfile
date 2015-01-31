@@ -138,3 +138,5 @@ RUN ./install-foreign-jni.sh
 
 USER root
 RUN apt-get -y install ant
+
+USER androidbuilder
