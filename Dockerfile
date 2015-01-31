@@ -135,3 +135,6 @@ RUN ./update-cabal.sh
 
 ADD user-scripts/install-foreign-jni.sh /home/androidbuilder/
 RUN ./install-foreign-jni.sh
+
+USER root
+RUN apt-get -y install ant
