@@ -130,3 +130,8 @@ RUN rm -rf $BASE
 ADD user-scripts/README /home/androidbuilder/
 RUN cat README
 
+ADD user-scripts/update-cabal.sh /home/androidbuilder/
+RUN ./update-cabal.sh
+
+ADD user-scripts/install-foreign-jni.sh /home/androidbuilder/
+RUN ./install-foreign-jni.sh
