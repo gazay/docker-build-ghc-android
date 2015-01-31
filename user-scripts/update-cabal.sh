@@ -1,4 +1,4 @@
 #!/bin/bash
 
 echo 'Updating cabal'
-cabal update
+/home/androidbuilder/.cabal/bin/cabal update
